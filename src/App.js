@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+// import Container from './components/container';
+// import Card from './components/card';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          BuyUcoin Market Page
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Container>
+        <Card />
+      </Container> */}
+      <Navbar />
     </div>
   );
 }
