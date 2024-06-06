@@ -1,26 +1,102 @@
-
-:root{
-  --brand-clr:#28abe3;
-  --nav-footer-clr:var(--brand-clr);
-  --body-clr:#f4f7fc;
+:root {
+  --brand-clr: #28abe3;
+  --nav-footer-clr: var(--brand-clr);
+  --body-clr: #f4f7fc;
+  --white: #fff;
 }
 
-body{
+body {
   background-color: var(--body-clr);
 }
 
-.container{
-  padding:.5em;
-  background:orange;
+.container {
+  padding: .5em;
+  background: orange;
 }
 
-.navbar{
+.navbar {
   background-color: var(--nav-footer-clr);
-  padding:0 30px;
-  height:40px;
+  padding: 16px 30px;
+  display: flex;
+  color: var(--white);
 }
 
-.logo{
-  height:50px;
-  /* width:100%; */
+.logo {
+  height: 50px;
+}
+
+.nav-content,
+.nav-content-left,
+.nav-content-left>ul,
+.nav-content-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-content,
+.nav-content-left {
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+.nav-content,
+.nav-content-left>ul {
+  gap: 0 3em;
+}
+
+.nav-content-left>ul>li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-content-right {
+  gap: 0 2em;
+}
+
+.theme {
+  display: none;
+}
+
+.moon{
+  color: #333;
+}
+
+.theme-switch-label>.sun {
+  transform: scale(0);
+  transition: .3s;
+}
+
+.theme-switch-label>span {
+  display: none;
+}
+
+.auth{
+  display: flex;
+  gap:0 1em;
+}
+
+.signup{
+  padding:1em 1em;
+  min-width: 100px;
+  border-radius: 30px;
+  border:none;
+  outline:none;
+  background-color: #fff;
+  color:var(--brand-clr);
+  /* font-size: 16px; */
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.login{
+  min-width: 80px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
